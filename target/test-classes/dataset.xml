@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <USERS ID="1" USERNAME="Alice" EMAIL="alice@example.com"/>
+    <USERS ID="2" USERNAME="Bob" EMAIL="bob@example.com"/>
+    <USERS ID="3" USERNAME="Charlie" EMAIL="charlie@example.com"/>
+</dataset>
