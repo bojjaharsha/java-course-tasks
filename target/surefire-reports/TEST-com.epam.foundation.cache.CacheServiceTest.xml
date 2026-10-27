@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.epam.foundation.cache.CacheServiceTest" time="0.423" tests="4" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/workspaces/codespaces-blank/target/test-classes:/workspaces/codespaces-blank/target/classes:/home/codespace/.m2/repository/com/google/guava/guava/33.2.1-jre/guava-33.2.1-jre.jar:/home/codespace/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/home/codespace/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/codespace/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/codespace/.m2/repository/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar:/home/codespace/.m2/repository/com/google/errorprone/error_prone_annotations/2.26.1/error_prone_annotations-2.26.1.jar:/home/codespace/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/home/codespace/.m2/repository/org/slf4j/slf4j-api/2.0.13/slf4j-api-2.0.13.jar:/home/codespace/.m2/repository/org/slf4j/slf4j-simple/2.0.13/slf4j-simple-2.0.13.jar:/home/codespace/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/codespace/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/codespace/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/codespace/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/codespace/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/codespace/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/codespace/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
+    <property name="java.vm.vendor" value="Microsoft"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://www.microsoft.com"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/local/sdkman/candidates/java/25.0.4+1-ms/lib"/>
+    <property name="sun.java.command" value="/workspaces/codespaces-blank/target/surefire/surefirebooter-20261027091630404_3.jar /workspaces/codespaces-blank/target/surefire 2026-10-27T09-16-29_888-jvmRun1 surefire-20261027091630404_1tmp surefire_0-20261027091630404_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/workspaces/codespaces-blank/target/test-classes:/workspaces/codespaces-blank/target/classes:/home/codespace/.m2/repository/com/google/guava/guava/33.2.1-jre/guava-33.2.1-jre.jar:/home/codespace/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/home/codespace/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/codespace/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/codespace/.m2/repository/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar:/home/codespace/.m2/repository/com/google/errorprone/error_prone_annotations/2.26.1/error_prone_annotations-2.26.1.jar:/home/codespace/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/home/codespace/.m2/repository/org/slf4j/slf4j-api/2.0.13/slf4j-api-2.0.13.jar:/home/codespace/.m2/repository/org/slf4j/slf4j-simple/2.0.13/slf4j-simple-2.0.13.jar:/home/codespace/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/codespace/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/codespace/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/codespace/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/codespace/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/home/codespace/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/home/codespace/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/codespace"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-08-18"/>
+    <property name="java.home" value="/usr/local/sdkman/candidates/java/25.0.4+1-ms"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/workspaces/codespaces-blank"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/workspaces/codespaces-blank/target/surefire/surefirebooter-20261027091630404_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="25.0.4.1+1-LTS"/>
+    <property name="user.name" value="codespace"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.8.0-1064-azure"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Microsoft-14951822"/>
+    <property name="localRepository" value="/home/codespace/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/microsoft/openjdk/issues"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="25.0.4.1"/>
+    <property name="user.dir" value="/workspaces/codespaces-blank"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Microsoft"/>
+    <property name="java.vm.version" value="25.0.4.1+1-LTS"/>
+    <property name="stdin.encoding" value="UTF-8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="testGuavaLruEviction" classname="com.epam.foundation.cache.CacheServiceTest" time="0.115">
+    <system-err><![CDATA[[main] INFO com.epam.foundation.cache.GuavaLruCache - Guava evicted entry: key=k2, cause=SIZE
+]]></system-err>
+  </testcase>
+  <testcase name="testSimpleJavaTimeExpiration" classname="com.epam.foundation.cache.CacheServiceTest" time="0.155">
+    <system-err><![CDATA[[main] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Removed entry due to 5s idle timeout: key=key
+]]></system-err>
+  </testcase>
+  <testcase name="testSimpleJavaLfuEviction" classname="com.epam.foundation.cache.CacheServiceTest" time="0.002">
+    <system-err><![CDATA[[main] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=k2, frequency=1
+]]></system-err>
+  </testcase>
+  <testcase name="testConcurrency" classname="com.epam.foundation.cache.CacheServiceTest" time="0.137">
+    <system-err><![CDATA[[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=36, frequency=1
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=93, frequency=1
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=100, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=32, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=33, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=34, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=35, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=50, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=51, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=52, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=53, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=54, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=55, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=56, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=57, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=58, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=59, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=60, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=61, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=62, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=63, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=64, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=65, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=66, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=67, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=68, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=69, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=70, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=71, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=72, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=73, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=149, frequency=1
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=74, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=75, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=76, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=77, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=78, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=79, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=80, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=81, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=82, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=83, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=84, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=85, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=86, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=87, frequency=2
+[pool-2-thread-5] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=46, frequency=1
+[pool-2-thread-3] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=88, frequency=2
+[pool-2-thread-3] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=89, frequency=2
+[pool-2-thread-3] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=90, frequency=2
+[pool-2-thread-3] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=91, frequency=2
+[pool-2-thread-3] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=92, frequency=2
+[pool-2-thread-3] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=128, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=129, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=130, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=131, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=132, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=133, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=134, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=135, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=136, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=137, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=138, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=139, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=140, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=141, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=142, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=143, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=144, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=145, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=146, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=147, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=148, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=32, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=33, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=34, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=35, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=39, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=40, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=41, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=42, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=43, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=44, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=45, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=94, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=95, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=96, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=97, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=98, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=99, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=50, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=51, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=52, frequency=2
+[pool-2-thread-8] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=45, frequency=1
+[pool-2-thread-8] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=53, frequency=2
+[pool-2-thread-8] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=54, frequency=2
+[pool-2-thread-8] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=55, frequency=2
+[pool-2-thread-8] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=56, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=132, frequency=1
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=57, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=58, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=59, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=60, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=61, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=62, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=63, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=64, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=65, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=66, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=67, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=68, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=69, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=70, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=64, frequency=1
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=71, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=72, frequency=2
+[pool-2-thread-5] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=48, frequency=1
+[pool-2-thread-5] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=73, frequency=2
+[pool-2-thread-5] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=74, frequency=2
+[pool-2-thread-5] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=75, frequency=2
+[pool-2-thread-5] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=76, frequency=2
+[pool-2-thread-5] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=77, frequency=2
+[pool-2-thread-5] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=78, frequency=2
+[pool-2-thread-5] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=39, frequency=2
+[pool-2-thread-5] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=40, frequency=2
+[pool-2-thread-5] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=41, frequency=2
+[pool-2-thread-5] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=42, frequency=2
+[pool-2-thread-5] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=43, frequency=2
+[pool-2-thread-5] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=44, frequency=2
+[pool-2-thread-5] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=50, frequency=2
+[pool-2-thread-5] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=51, frequency=2
+[pool-2-thread-5] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=52, frequency=2
+[pool-2-thread-5] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=53, frequency=2
+[pool-2-thread-5] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=54, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=55, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=56, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=57, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=58, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=59, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=60, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=61, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=62, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=63, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=47, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=132, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=133, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=134, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=135, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=136, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=137, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=138, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=139, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=140, frequency=2
+[pool-2-thread-8] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=97, frequency=1
+[pool-2-thread-8] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=141, frequency=2
+[pool-2-thread-8] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=142, frequency=2
+[pool-2-thread-8] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=143, frequency=2
+[pool-2-thread-8] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=144, frequency=2
+[pool-2-thread-8] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=145, frequency=2
+[pool-2-thread-8] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=146, frequency=2
+[pool-2-thread-8] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=147, frequency=2
+[pool-2-thread-8] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=148, frequency=2
+[pool-2-thread-8] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=149, frequency=2
+[pool-2-thread-8] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=79, frequency=2
+[pool-2-thread-8] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=80, frequency=2
+[pool-2-thread-8] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=81, frequency=2
+[pool-2-thread-8] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=82, frequency=2
+[pool-2-thread-8] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=83, frequency=2
+[pool-2-thread-8] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=84, frequency=2
+[pool-2-thread-8] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=85, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=86, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=87, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=88, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=89, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=90, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=91, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=92, frequency=2
+[pool-2-thread-2] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=93, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=94, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=95, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=96, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=133, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=134, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=135, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=136, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=137, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=138, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=139, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=140, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=141, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=142, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=143, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=144, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=145, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=146, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=147, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=148, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=80, frequency=1
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=149, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=65, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=66, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=67, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=68, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=69, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=70, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=71, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=72, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=73, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=74, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=75, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=76, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=77, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=78, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=79, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=66, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=67, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=68, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=69, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=70, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=71, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=72, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=73, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=74, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=75, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=77, frequency=1
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=76, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=98, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=99, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=132, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=133, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=134, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=135, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=136, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=137, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=138, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=140, frequency=1
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=139, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=66, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=67, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=68, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=69, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=70, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=71, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=72, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=73, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=74, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=75, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=76, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=77, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=78, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=79, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=81, frequency=1
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=80, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=66, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=67, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=68, frequency=2
+[pool-2-thread-3] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=70, frequency=1
+[pool-2-thread-3] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=69, frequency=2
+[pool-2-thread-3] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=132, frequency=2
+[pool-2-thread-3] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=133, frequency=2
+[pool-2-thread-3] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=134, frequency=2
+[pool-2-thread-3] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=135, frequency=2
+[pool-2-thread-3] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=136, frequency=2
+[pool-2-thread-3] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=137, frequency=2
+[pool-2-thread-3] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=138, frequency=2
+[pool-2-thread-3] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=139, frequency=2
+[pool-2-thread-3] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=140, frequency=2
+[pool-2-thread-3] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=141, frequency=2
+[pool-2-thread-3] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=142, frequency=2
+[pool-2-thread-3] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=143, frequency=2
+[pool-2-thread-3] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=144, frequency=2
+[pool-2-thread-3] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=145, frequency=2
+[pool-2-thread-3] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=146, frequency=2
+[pool-2-thread-3] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=147, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=148, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=149, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=81, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=82, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=83, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=84, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=85, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=86, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=87, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=88, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=89, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=90, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=91, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=92, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=93, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=94, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=95, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=96, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=97, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=98, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=99, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=66, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=67, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=68, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=69, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=70, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=71, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=72, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=73, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=74, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=75, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=76, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=77, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=78, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=79, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=80, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=81, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=82, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=83, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=84, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=85, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=86, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=87, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=89, frequency=1
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=88, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=141, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=142, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=143, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=144, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=145, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=146, frequency=2
+[pool-2-thread-6] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=147, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=148, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=149, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=90, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=91, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=92, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=93, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=94, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=95, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=96, frequency=2
+[pool-2-thread-7] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=97, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=98, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=99, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=71, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=72, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=73, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=74, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=75, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=76, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=77, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=78, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=79, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=80, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=81, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=82, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=83, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=84, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=85, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=86, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=87, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=88, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=89, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=90, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=91, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=82, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=83, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=84, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=85, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=86, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=87, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=88, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=89, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=90, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=91, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=92, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=93, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=94, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=95, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=96, frequency=2
+[pool-2-thread-4] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=97, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=98, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=78, frequency=1
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=99, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=132, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=133, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=134, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=135, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=136, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=138, frequency=1
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=137, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=92, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=93, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=94, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=95, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=96, frequency=2
+[pool-2-thread-1] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=97, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=98, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=99, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=139, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=140, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=141, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=142, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=143, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=144, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=145, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=146, frequency=2
+[pool-2-thread-9] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=147, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=148, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=149, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=79, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=80, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=81, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=82, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=83, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=84, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=85, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=86, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=87, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=88, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=89, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=90, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=91, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=92, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=93, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=94, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=95, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=96, frequency=2
+[pool-2-thread-10] INFO com.epam.foundation.cache.SimpleJavaLfuCache - Evicted LFU entry: key=97, frequency=2
+]]></system-err>
+  </testcase>
+</testsuite>

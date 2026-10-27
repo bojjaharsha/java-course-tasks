@@ -1,0 +1,9 @@
+/workspaces/codespaces-blank/src/main/java/com/epam/foundation/algo/BinarySearch.java
+/workspaces/codespaces-blank/src/main/java/com/epam/foundation/algo/InsertionSort.java
+/workspaces/codespaces-blank/src/main/java/com/epam/foundation/algo/MergeSort.java
+/workspaces/codespaces-blank/src/main/java/com/epam/foundation/algo/SortStrategy.java
+/workspaces/codespaces-blank/src/main/java/com/epam/foundation/cache/CacheEntry.java
+/workspaces/codespaces-blank/src/main/java/com/epam/foundation/cache/CacheService.java
+/workspaces/codespaces-blank/src/main/java/com/epam/foundation/cache/GuavaLruCache.java
+/workspaces/codespaces-blank/src/main/java/com/epam/foundation/cache/SimpleJavaLfuCache.java
+/workspaces/codespaces-blank/src/main/java/com/epam/foundation/tree/BinaryTree.java
